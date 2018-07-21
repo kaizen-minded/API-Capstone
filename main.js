@@ -3,7 +3,19 @@
 $(function(){
 
 	$("#distance-between").change(function(){
-		let slider1 = $("#distance-between").val();
+		let slider1 = parseInt($("#distance-between").val(), 10);
+		if(slider1 >= 45 && slider1 <= 55){
+			$("#meet-up-text").text("somewhere in the middle");
+		} else if(slider1 < 1){
+			$("#meet-up-text").text("closer to my place");
+		}else if (slider1  < 44){
+			$("#meet-up-text").text("at my place");
+		} else if(slider1 === 100){
+			$("#meet-up-text").text("at your place");
+		}
+		else{
+			$("#meet-up-text").text("closer to your place");
+		}
 		$("#distance-percent").text(slider1);
 	});
 

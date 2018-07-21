@@ -18,40 +18,48 @@
 	</header>
 	<div class="row">
 		<section id="section-a">
-		<h2>Helping you to find places to meet up that are a convinent distance between your places.</h2>
+		<h2>Helping you to find places to meet up at aplace that is convinent distance between your places.</h2>
 		</section>
 
 		<form>
 			<fieldset>
-				<legend>My Place</legend>
-
-				<section class="mainbox">
-					<div class="city-box col-12">
-						<label for="my-address">Address</label>
-						<input type="text" id="my-address" placeholder="Address, city State, or Zip Code">	
+				<section>
+					
+					<div class="test">
+						<h3><span class="number-icon">1</span> Where are you two from?</h3>
+						<div class="col-12">
+							<label for="my-address">My Address</label>
+							<input type="text" id="my-address" placeholder="Address, city State, or Zip Code">	
+						</div>
+					<div class="col-12">
+						<label for="your-address">Your Address</label>
+						<input type="text" id="your-address"  placeholder="Address, city State, or Zip Code">	
+					</div>
 					</div>
 					
 				</section>
+			
 				
-			</fieldset>
-
-			<fieldset>	
-				<legend>Your Place</legend>		
-				<section class="mainbox">
-					<div class="city-box col-12">
-						<label for="your-address">Address</label>
-						<input type="text" id="your-address"  placeholder="Address, city State, or Zip Code">	
-					</div>
-				</section>
-			</fieldset>
-			<section id="distance">
-				<div>
+				<section id="distance">
+					<h3><span class="number-icon">2</span> Where do you want to meet?</h3>
+					<div class="col-12">
 					<p>My Place</p>
 					<input type="range" min="0" max="100" value="50" list="tickmarks" step="10" id="distance-between">
 					<p>Your Place</p>
 					<span id="distance-percent">50</span>
-				</div>			
-			</section>
+					<p>Let's meet: <span id="meet-up-text">Some where in the middle</span></p>
+
+					</div>
+				</section>
+				
+				<section id="query">
+					<h3><span class="number-icon">3</span> What kind of place are you looking for?</h3>
+					<div class="col-12">
+					<input type="text" id="your-address"  placeholder="resturant, bar, movies">
+
+					</div>
+				</section>
+				</fieldset>
 			 
 			<input type="submit" name="Submit">
 		</form>
@@ -60,10 +68,15 @@
 		<section>
 			<article>
 				<div class="details">
-					<h3>SmashBurger</h3>
-					<h4>Rating: 4.5 <i class="fas fa-star"></i></h4>
-					<h4>Price <i class="fas fa-dollar-sign"></i></h4>
-					<h3>4 Aviation Cir, Arlington, VA 22202, USA</h3>
+					<div class="col-6">
+						<h3>SmashBurger</h3>
+					</div>
+					<div class="col-6">
+						<h4>Rating: 4.5 <i class="fas fa-star"></i></h4>
+						<h4>Price <i class="fas fa-dollar-sign"></i></h4>
+						<h3>4 Aviation Cir, Arlington, VA 22202, USA</h3>		
+					</div>
+					
 				</div>
 			</article>
 
