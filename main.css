@@ -14,6 +14,9 @@ body{
 }
 
 form{
+	border: 10px solid black;
+	background: #FFF8D4;
+	padding: 10px;
 	text-align: left;
 }
 
@@ -33,7 +36,7 @@ label{
 }
 
 #title{
-	font-size: 5rem;
+	font-size: 19vh;
 }
 
 #showcase h1 span{
@@ -63,15 +66,15 @@ label{
 fieldset{
 	border: none;
 }
-input{
-	width: 90%;
+.text-input{
+	width: 80%;
 }
 #distance-percent{
 	display: block;
 }
 
 #distance-between{
-	width: 30%;
+	width: 25%;
 }
 
 span.number-icon {
@@ -81,7 +84,16 @@ span.number-icon {
     text-align: center;
     height: 25px;
     border-radius: 50%;
-    background: purple;
+    background: #00455B;
+}
+
+.details{
+	overflow: hidden;
+	margin-top: 35px;
+}
+
+#query-title{
+	font-size: 3em;
 }
 
 fieldset section {
@@ -93,11 +105,24 @@ section h3{
 	margin-bottom: 10px;
 
 }
+article h4{
+	display: inline-block;
+	margin-right: 35px;
+}
+
+ .query-info{
+	text-align: left;
+	padding-top: 0;
+}
+.query-rating{
+	font-size: 1.7em;
+}
+
 
 
 @media only screen and (min-width: 640px){
 	#title{
-	font-size: 9rem;
+	font-size: 7em;
 	}
 
 	form{
@@ -107,11 +132,10 @@ section h3{
 		margin-right: auto;
 	}
 
-	input{
-	width: 75%;
+	.text-input{
+	width: 90%;
 	}
 	#distance-between{
-
 	width: 50%;
 	}
 
