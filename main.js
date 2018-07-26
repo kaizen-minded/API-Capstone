@@ -123,13 +123,6 @@ $(function(){
 		directionsService.route(directionsRequest, formResponse.googleResponse);
 	});
 
-		// function setNumberOfDollar(number, index){
-		// 	let dollarsigns = "";
-		// 	for(let i = 0; i < number; i++){
-		// 		dollarsigns += `<i class="fas fa-dollar-sign"></i>`;
-		// 	}
-		// 	return dollarsigns;
-		// }
 	
 
 
